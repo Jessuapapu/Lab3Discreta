@@ -1,0 +1,11 @@
+{% extends "Calculadora.html" %}
+
+{% block main %}
+
+{{ super() }}
+     <!-- Mostrar el diagrama de Venn si existe -->
+     <div class="text-center mt-4">
+        <img src="{{ img_path }}" alt="Diagrama de Venn" class="img-fluid">
+    </div>
+
+{% endblock %}

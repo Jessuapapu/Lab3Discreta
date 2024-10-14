@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<form action="/cal" method="post">
+    <div class="row">
+        <div class="col">
+            <a>Conjunto - A</a>
+                <input type="text" class="form-control" name="ConjuntoA" placeholder="Ingrese el Conjunto A">
+        </div>
+        <div class="col">
+            <a>Conjunto - B</a>
+            <input type="text" class="form-control" name="ConjuntoB" placeholder="Ingrese el Conjunto B">
+        </div>
+        <div class="col">
+            <a>Conjunto - C</a>
+            <input type="text" class="form-control" name="ConjuntoC" placeholder="Ingrese el Conjunto C">
+        </div>
+
+        <div class="row">
+            <a>operacion</a>
+            <input type="text" class="form-control" name="operacion" placeholder="Ejemplo: A∪B, A∩B, A−B, A⊕B">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">Calcular</button>
+            </div>
+        </div>
+
+    </div>
+</form> 
+{% endblock %}

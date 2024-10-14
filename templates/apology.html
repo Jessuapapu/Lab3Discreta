@@ -1,0 +1,12 @@
+{% extends "Calculadora.html" %}
+
+{% block main %}
+
+{{ super() }}
+{% if x == " "%}
+    <p> Datos no ingresados correctamente, No usar letras en el conjunto </p>
+{% else %}
+<p> Datos ingresados no son correctos o no han sido ingresados en el label {{ x }}</p>
+{% endif%}
+
+{% endblock %}
