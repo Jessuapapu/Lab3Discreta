@@ -3,10 +3,21 @@
 {% block main %}
 
 {{ super() }}
-{% if x == " "%}
+{% if x ==  " "%}
+
+<div class="BackGroundRespuesta">
+
     <p> Datos no ingresados correctamente, No usar letras en el conjunto </p>
+
+    <br>
+</div>
+
 {% else %}
-<p> Datos ingresados no son correctos o no han sido ingresados en el label {{ x }}</p>
+
+<div class="BackGroundRespuesta">
+    <p> Datos ingresados no son correctos o no han sido ingresados en el label {{ x }}</p>
+</div>
+
 {% endif%}
 
 {% endblock %}

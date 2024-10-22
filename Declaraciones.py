@@ -2,20 +2,15 @@ import re
 #clase de Conjuntos
 import re
 
-
-def CrearConjunto(cadena: str):
+def CrearConjunto(cadena:str):
     """
-    Utiliza expresiones regulares para limpiar la cadena de entrada,
+    Utiliza expresiones regulares para limpiar la cadena de entrada, 
     eliminando espacios y comas adicionales. Convierte los elementos válidos a enteros
     y los guarda en el atributo 'Conjunto' del objeto.
     """
-    # Limpiar la cadena, eliminar espacios y comas adicionales, y dividir en elementos
-    elementos_limpios = re.sub(r"(,*)(?:\s+)", " ", cadena).replace(",", " ").split()
-    
-    # Convertir a enteros y crear un conjunto
-    conjunto = set(int(elemento) for elemento in elementos_limpios if elemento.isdigit())
-    
-    return conjunto
+    str2 = re.sub(r"(,*)(?:\s+)", " ", cadena).replace(",", " ").split(" ")
+    print(str2)
+    return str2
 
 def verificacion(str):
 

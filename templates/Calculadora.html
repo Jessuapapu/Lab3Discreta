@@ -19,7 +19,7 @@
 
         <div class="row">
             <a>operacion</a>
-            <input type="text" class="form-control" name="operacion" placeholder="Ejemplo: A∪B, A∩B, A−B, A⊕B">
+            <input type="text" class="form-control" name="operacion" placeholder="Ejemplo: A | B, A & B, A − B, A ^ B">
         </div>
 
         <div class="row">
@@ -28,6 +28,60 @@
             </div>
         </div>
 
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Simbolo</th>
+                <th scope="col">Calculadora</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">∪</th>
+                <td> | </td>
+                <td> Union </td>
+                <td> A | B</td>
+              </tr>
+
+              <tr>
+                <th scope="row">∩</th>
+                <td> & </td>
+                <td> Interseccion </td>
+                <td> A & B</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Δ</th>
+                <td > ^ </td>
+                <td>Diferencia Simetrica</td>
+                <td> A ^ B</td>
+              </tr>
+
+              <tr>
+                <th scope="row">⊆</th>
+                <td > <= </td>
+                <td> Subconjunto </td>
+                <td> A <= B</td>
+              </tr>
+
+              <tr>
+                <th scope="row">⊇</th>
+                <td > >= </td>
+                <td> SuperConjunto </td>
+                <td> A >= B</td>
+              </tr>
+
+              <tr>
+                <th scope="row">^</th>
+                <td > ** </td>
+                <td> Potenciacion </td>
+                <td> A ** B </td>
+              </tr>
+            </tbody>
+          </table>
+          
     </div>
 </form> 
 {% endblock %}

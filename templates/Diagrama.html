@@ -3,9 +3,21 @@
 {% block main %}
 
 {{ super() }}
+
      <!-- Mostrar el diagrama de Venn si existe -->
      <div class="text-center mt-4">
         <img src="{{ img_path }}" alt="Diagrama de Venn" class="img-fluid">
     </div>
 
+    <div class="BackGroundRespuesta">
+
+        <p>el conjunto universal = {{ Conjunto_U }}</p>
+        <p>El conjunto A = {{ Conjunto_A }}</p>
+        <p>El conjunto B = {{ Conjunto_B }}</p>
+        <p>El conjunto C = {{ Conjunto_C }}</p>
+
+        <p>El resultado de la ecuacion {{ ecuacion }} dada anterior mente es = {{ resultado }}</p>
+
+        <br>
+    </div>
 {% endblock %}

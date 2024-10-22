@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: #faebd7;
 }
 
 .navbar-brand {
@@ -35,4 +35,18 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20;
 
+}
+
+.BackGroundRespuesta {
+    padding: 20px; /* Espacio interno para el contenedor */
+    margin: 20px; /* Espacio externo alrededor del contenedor */
+    background-color: #f5ce9a; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid#514433; /* Borde azul */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto de elevación */
+}
+
+.BackGroundRespuesta p {
+    margin: 10px 0; /* Espacio entre los párrafos */
+    font-weight: bold; /* Hacer el texto más audaz */
 }
